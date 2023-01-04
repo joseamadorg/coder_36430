@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<header>
+    <nav>
+        <!-- anchor o ancla, "a" -->
+        <ul>
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="proyectos.html">Proyectos</a>
+            </li>
+            <li>
+                <a href="equipo.html">Equipo</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- ANTES DE EXPLICAR EL FORMULARIO 
+    VAMOS A CONOCER ETIQUETAS DE BLOQUE Y DE LINEA -->
+
+<body>
+    <form action="#" method="GET" enctype="multipart/form-data">
+        <fieldset>
+            <legend><strong>FORMULARIO</strong></legend>
+            <div>
+               <label for="name">Nombre</label>
+               <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+               <label for="email">Email</label>
+               <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+               <label for="age">Edad</label>
+               <input type="number" name="age" id="age" min="18" max="200" step="1">
+            </div>
+            <div>
+               <label for="date">Fecha de Nacimiento</label>
+               <input type="date" name="date" id="date" min="2022-11-29">
+            </div>
+            <div>
+               <strong>Fruta Favorita</strong>
+               <div>
+                  <label for="banana">Banana</label>
+                  <input type="checkbox" name="banana" id="banana">
+               </div>
+               <div>
+                  <label for="apple">Manzana</label>
+                  <input type="checkbox" name="apple" id="apple">
+               </div>
+            </div>
+            <div>
+               <strong>Genero</strong>
+               <div>
+                  <label for="male">Masculino</label>
+                  <input type="radio" name="gender" id="male" value="hombre">
+               </div>
+               <div>
+                  <label for="female">Femenino</label>
+                  <input type="radio" name="gender" id="female" value="mujer">
+               </div>
+            </div>
+            <div>
+               <label for="eyeColor">Color de Ojos</label>
+               <select name="eyeColor" id="eyeColor" multiple>
+                  <option value="Green" label="VERDE"></option>
+                  <option value="Red" label="ROJO"></option>
+                  <option value="Black" label="NEGRO"></option>
+               </select>
+            </div>
+            <div>
+               <label for="bio">Bio</label>
+               <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div>
+               <label for="file">Subir Archivo</label>
+               <input id="file" type="file" name="file">
+            </div>
+            <div>
+               <label for="phone">Teléfono</label>
+               <input type="tel" name="phone" id="phone">
+            </div>
+            <div>
+               <label for="url">URL</label>
+               <input type="url" name="url" id="url">
+            </div>
+            <div>
+               <label for="color">Color</label>
+               <input type="color" name="color" id="color">
+            </div>
+            <div>
+               <label>Password</label>
+               <input type="password" name="password" required>
+            </div>
+            <input type="reset" value="Reiniciar Formulario"></input>
+            <input type="submit" value="Enviar Formulario"></input>
+        </fieldset>
+    </form>
+</body>
+</html>
