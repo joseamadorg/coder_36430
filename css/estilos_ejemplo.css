@@ -144,7 +144,7 @@ p, label, input, span {
 
 .form__btn {
     width: 80%;
-    background: #f1101c;
+    background: tomato;
     border: none;
     height: 2rem;
     color: white;
