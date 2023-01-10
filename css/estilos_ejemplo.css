@@ -20,8 +20,8 @@ p, label, input, span {
 }
 
 .blanco{
-    color: white; 
-    background-color: yellow;
+    color: #fff; 
+    background-color: #f1101c;
     padding: 1rem;
     margin-right: 0.5rem;
 }
@@ -144,7 +144,7 @@ p, label, input, span {
 
 .form__btn {
     width: 80%;
-    background: coral;
+    background: #f1101c;
     border: none;
     height: 2rem;
     color: white;
@@ -450,6 +450,15 @@ p, label, input, span {
 
     .servicios__columna {
         margin-bottom: 1rem;
+    }
+
+    [data-aos=flip-left] {
+        transform: perspective(0px) rotateY(0deg) !important;
+    }
+
+    [data-aos=zoom-out-left] {
+        opacity: 1 !important;
+        transform: translate3d(0px,0,0) scale(1) !important;
     }
 }
 
