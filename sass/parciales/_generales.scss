@@ -1,0 +1,34 @@
+/***GENERALES ***/
+
+h1, h2, h3, h4, h5, h6, h1 span{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, label, input, span {
+    font-family: 'Bitter', serif;
+}
+
+.blanco{
+    color: black; 
+    background-color: white;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+.form__btn {
+    width: 80%;
+    background: coral;
+    border: none;
+    height: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.form__btn:hover {
+    background: tomato;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1) !important;
+}
+

@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- ESTILOS DE BS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+    <script src="https://kit.fontawesome.com/c7f9ac558a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EQUIPO</title>
-    <link rel="stylesheet" href="../css/estilos_ejemplo.css">
+    <title>EQUIPO CON BS</title>
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="body_equipo">
-    <header class="header"> 
-        <a class="header__logocontenedor" href="#">
-            <img class="header__logo" src="../img/logo.png" alt="LOGO DE MI EMPRESA">
-        </a>
-        <nav class="header__nav">
-            <!-- anchor o ancla, "a" -->
-            <ul class="header__list">
-                <li class="header__item"><a class="header__anchor" href="./vistas/tienda.html">Inicio</a></li>
-                <li class="header__item"><a class="header__anchor" href="./vistas/proyectos.html">Proyectos</a></li>
-                <li class="header__item"><a class="header__anchor header__anchor--activo" href="./vistas/equipo.html">Equipo</a></li>
-                <li class="header__item"><a class="header__anchor" href="./vistas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-       <section class="padre">
-        <div class="arriba">ARRIBA</div>
-        <div class="costado">COSTADO</div>
-        <div class="pie">PIE</div>
-        <div class="seccion">SECCION</div>
-       </section>
-    </main>
+<body>
+    <div class="contenedor__modoMessi">
+        <header class="header"> 
+            <a href="#">
+                <img class="header__logo" src="../img/logo.png" alt="LOGO DE MI EMPRESA">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item slide-in-top"><i class="blanco fa-solid fa-folder"></i><a class="header__anchor" href="../index.html">Inicio</a></li>
+                    <li class="header__item slide-in-top"><i class="blanco fa-solid fa-folder"></i><a class="header__anchor" href="../vistas/proyectos.html">Proyectos</a></li>
+                    <li class="header__item slide-in-top"><i class="blanco fa-solid fa-folder"></i><a class="header__anchor header__anchor--activo" href="./vistas/equipo.html">Equipo</a></li> 
+                    <li class="header__item slide-in-top"><i class="blanco fa-solid fa-folder"></i><a class="header__anchor" href="../vistas/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <section class="hero ">
+            <h1 class="hero__title kenburns-top">ESCOLA<br><span class="hero__title--white"> CHECK </span> <span class="hero__title--black"> MATE</span></h1>
+            <div class="hero__contenedor">
+                <p class="hero__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil illum non qui minima repudiandae molestias sunt quasi cum esse ipsam minus, <strong>quod explicabo molestiae</strong> quod explicabo molestiae placeat voluptatem culpa eos necessitatibus dolores.</p>
+                <form class="hero__form" action="#" enctype="text/plain" method="get">
+                    <div class="hero__formWrp">
+                        <!-- <label for="userName">Nombre:</label> -->
+                        <input class="hero__input" type="text" name="userName" id="userName" placeholder="Nombre">
+                    </div>
+                    <div class="hero__formWrp">
+                        <!-- <label for="userMail">Correo Electrónico</label> -->
+                        <input class="hero__input" type="email" name="userMail" id="userMail" placeholder="Correo Electrónico">
+                    </div>
+                    <input class="form__btn" type="submit" value="SUSCRIBIRME">
+                </form>
+            </div>
+          </section>
+          <section class="negocio container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../img/foto1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>First slide label</h5>
+                              <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/foto2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Second slide label</h5>
+                              <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../img/foto3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="negocio__contenedor col-md-6">
+                    <p class="negocio__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis culpa perspiciatis suscipit adipisci cumque rerum modi incidunt debitis doloribus?</p>
+                    <p class="negocio__parrafo text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis culpa perspiciatis suscipit adipisci cumque rerum modi incidunt debitis doloribus?</p>
+                    <p class="negocio__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis culpa perspiciatis suscipit adipisci cumque rerum modi incidunt debitis doloribus?</p>
+                </div>
+            </div>
+          </section>
+        </main>
+        <div class="container">
+            <section class="servicios row">
+                <div class="servicios__columna col-md-3">
+                    <img class="servicios__img" data-aos="zoom-out-left" src="../img/rey_icon.png" alt="">
+                    <p class="servicios__parrafo text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi rerum ab inventore hic harum.</p>
+                </div>
+                <div class="servicios__columna col-md-3">
+                    <img class="servicios__img" data-aos="zoom-out-left" src="../img/rey_icon.png" alt="">
+                    <p class="servicios__parrafo text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi rerum ab inventore hic harum.</p>
+                </div>
+                <div class="servicios__columna col-md-3">
+                    <img class="servicios__img" data-aos="zoom-out-left" src="../img/rey_icon.png" alt="">
+                    <p class="servicios__parrafo text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi rerum ab inventore hic harum.</p>
+                </div>
+                <div class="servicios__columna col-md-3">
+                    <img class="servicios__img" data-aos="zoom-out-left" src="../img/rey_icon.png" alt="">
+                    <p class="servicios__parrafo text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nisi rerum ab inventore hic harum.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+           <div class="footer__columna">
+            <p class="footer__parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quibusdam fugiat? Sit architecto quos optio et, ut pariatur accusantium quae magnam suscipit excepturi assumenda tempore tenetur atque, asperiores placeat ad delectus autem modi voluptatibus laboriosam nulla in hic at! Excepturi?
+            </p>
+            <p class="footer__parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quibusdam fugiat? Sit architecto quos optio et, ut pariatur accusantium quae magnam suscipit excepturi assumenda tempore tenetur atque, asperiores placeat ad delectus autem modi voluptatibus laboriosam nulla in hic at! Excepturi?
+            </p>
+           </div>
+           <div class="footer__columna">
+                <div class="footer__iframe">
+                    <iframe class="aifrem" width="560" height="315" src="https://www.youtube.com/embed/uTncaJqirs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+           </div>
+           <div class="footer__columna">
+            <p class="footer__parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quibusdam fugiat? Sit architecto quos optio et, ut pariatur accusantium quae magnam suscipit excepturi assumenda tempore tenetur atque, asperiores placeat ad delectus autem modi voluptatibus laboriosam nulla in hic at! Excepturi?
+            </p>
+            <p class="footer__parrafo">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quibusdam fugiat? Sit architecto quos optio et, ut pariatur accusantium quae magnam suscipit excepturi assumenda tempore tenetur atque, asperiores placeat ad delectus autem modi voluptatibus laboriosam nulla in hic at! Excepturi?
+            </p>
+           </div>
+        </footer>
+    </div>
+    <script>
+        AOS.init({
+            once: true,
+        }
+        );
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

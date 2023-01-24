@@ -1,0 +1,13 @@
+
+.form__btn {
+    width: 80%;
+    background: coral;
+    border: none;
+    height: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    &:hover {
+        background: tomato;
+    }
+}
+

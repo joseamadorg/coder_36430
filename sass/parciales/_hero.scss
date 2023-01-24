@@ -1,0 +1,81 @@
+/**** hero ****/
+
+.hero {
+    height: 90vh;
+    background-image: url("../img/jaque_XL.jpg");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-bloque;
+    &__title {
+        font-size: 5rem;
+        background-color: #f1101c;
+        color: white;
+        text-align: center;
+        margin-bottom: 1rem;
+        position: relative;
+        top: -50px;
+        &--white{
+            color: white;
+            background: black;
+            padding-left: 1rem;
+        }
+        &--black{
+            padding: 0rem 1rem;
+            color: black;
+            background: white;
+        }
+    }
+    &__contenedor{
+        display: flex; 
+        gap: 50px; 
+        justify-items: center;
+        align-items: center;
+    }
+    
+    &__parrafo, &__form{
+        flex-basis: 100%; 
+    }
+
+    
+    &__parrafo{
+        background: $gradiente-desconocido;
+        color: black; 
+        padding: 1rem;
+        line-height: 1.5;
+    }
+    
+    .hero__parrafo strong{
+        color: red; 
+    }
+    
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__input {
+        margin: 0rem 0rem 1rem 0rem;
+        width: 100%;
+        height: 2rem;
+    }
+    
+    &__formWrp {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

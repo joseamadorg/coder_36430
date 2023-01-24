@@ -114,8 +114,6 @@ p, label, input, span {
     flex-basis: 100%; 
 }
 
-
-
 .hero__parrafo{
     background-color: rgba(255, 255, 255, 60%);
     color: black; 
@@ -151,6 +149,22 @@ p, label, input, span {
     font-size: 1.2rem;
 }
 
+.form__btn:hover {
+    background: tomato;
+}
+
+.btn--propio{
+    background-color: #f1101c;
+    border-color: transparent;
+    color: white; 
+}
+
+.btn:hover{
+    background-color: tomato;
+    border-color: transparent;
+    color: white; 
+}
+
 /* negocio */
 
 .negocio {
@@ -171,17 +185,12 @@ p, label, input, span {
 
 
 .servicios {
-    display: flex;
     background-color: black;
     padding: 1rem 5rem;
 }
 
 .servicios__columna {
-    display: flex;
     color: white;
-    flex-direction: row;
-    gap: 1rem;
-    align-items: center;
 }
 
 .servicios__img {
@@ -377,13 +386,14 @@ p, label, input, span {
         flex-direction: column;
        }
 
-       .servicios{
-        display: none;
-       }
 
        .footer{
         grid-template-columns: 1fr;
         padding: 1rem;
+    }
+
+    [data-aos=flip-left]{
+        transform: perspective(0px) rotateY(0deg) !important;
     }
 }
 
@@ -444,13 +454,12 @@ p, label, input, span {
         width: 100% !important;
     }
 
-    .servicios{
-        display: flex;
-       }
 
     .servicios__columna {
         margin-bottom: 1rem;
     }
+
+    
 }
 
 
