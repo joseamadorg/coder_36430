@@ -1,0 +1,33 @@
+.header{
+    background-color: black;
+    padding: $padding-bloque;
+    &__logo{
+        width: 100px;
+        &:hover{
+            width: 50px; 
+        }
+    }
+    &__nav{
+        list-style: none;
+    }
+    &__list{
+        display: flex;
+        font-family: 'Oswald', sans-serif;
+        list-style: none;
+    }
+    
+    &__item{
+        margin: 0rem 1rem;
+    }
+    
+    &__anchor{
+        color: white; 
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+            color: tomato !important; 
+        }
+    }
+}
+
+

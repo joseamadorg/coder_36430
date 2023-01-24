@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.contenedor__modoMessi{
+    max-width: 1920px;
+    margin: auto;
+}
+
+/**** generales ****/
+
+h1, h2, h3, h4, h5, h6, h1 span{
+    font-family: 'Oswald', sans-serif;
+}
+
+p, label, input, span {
+    font-family: 'Bitter', serif;
+}
+
+.blanco{
+    color: black; 
+    background-color: white;
+    padding: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+
+/**** /generales ****/
+
+/**** header ****/
+
+.header{
+    background-color: black;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    width: 100px;
+}
+
+.header__nav{
+    list-style: none;
+}
+
+.header__list{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+}
+
+.header__item{
+    margin: 0rem 1rem;
+}
+
+.header__anchor{
+    color: white; 
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/**** /header ****/
+
+/**** hero ****/
+
+.hero {
+    height: 90vh;
+    background-image: url("../img/jaque_XL.jpg");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem; */
+}
+
+.hero__title{
+    font-size: 5rem;
+    background-color: #f1101c;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+   /* position: relative;
+    top: -50px;*/
+}
+
+.hero__title--white{
+    color: white;
+    background: black;
+    padding-left: 1rem;
+}
+
+.hero__title--black{
+    padding: 0rem 1rem;
+    color: black;
+    background: white;
+}
+
+.hero__contenedor{
+    /*display: flex; 
+    gap: 50px; 
+    justify-items: center;
+    align-items: center; */
+}
+
+.hero__parrafo, .hero__form{
+    /* flex-basis: 100%; */ 
+}
+
+
+
+.hero__parrafo{
+    background-color: rgba(255, 255, 255, 60%);
+    color: black; 
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.hero__parrafo strong{
+    color: red; 
+}
+
+.hero__form {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.hero__input {
+    margin: 0rem 0rem 1rem 0rem;
+    width: 100%;
+    height: 2rem;
+}
+
+.hero__formWrp {
+    width: 80%;
+}
+
+.form__btn {
+    width: 80%;
+    background: coral;
+    border: none;
+    height: 2rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* negocio */
+
+.negocio {
+    padding: 3rem 8rem;
+    /* display: flex;
+    gap: 50px;
+    align-items: center; */
+}
+
+.negocio__contenedor {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+    height: 50vh;
+}
+
+/* servicios  */
+
+
+.servicios {
+    background-color: black;
+    padding: 1rem 5rem;
+}
+
+.servicios__columna {
+    color: white;
+}
+
+.servicios__img {
+    width: 50%;
+    height: 50%;
+}
+
+.footer {
+   /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem 5rem;
+    gap: 2rem;
+    align-items: center; */
+}
+
+
+/* MEDIA QUERIES (ESTILOS MOVILES) 
+
+
+@media screen and (min-width: 1024px) {
+    .negocio__pic{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+       .header{
+        background-color: yellow;
+
+       } 
+       .negocio{
+        flex-direction: column;
+       }
+
+
+       .footer{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    [data-aos=flip-left]{
+        transform: perspective(0px) rotateY(0deg) !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header{
+        background-color: tomato;
+        flex-direction: column;} 
+
+    .header__list {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .hero{
+        height: auto;
+       overflow: hidden;
+    }
+
+    .hero__title--white {
+        color: white;
+        background: black;
+        padding: 0rem 20rem;
+       
+    }
+
+    .hero__title--black {
+        padding: 0rem 20rem;
+        color: black;
+        background: white;
+    }
+
+    .hero__contenedor {
+        gap: 25px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero__formWrp {
+        width: 100%;
+    }
+
+    .form__btn {
+        width: 100%; 
+    }
+    .negocio, .servicios, .footer{
+        flex-direction: column;
+    }
+
+    .negocio{
+        padding: 1rem;
+    }
+
+    .negocio__pic {
+        width: 100%;
+    }
+
+    .aifrem{
+        width: 100% !important;
+    }
+
+
+    .servicios__columna {
+        margin-bottom: 1rem;
+    }
+
+    
+}
+
+*/
+
+

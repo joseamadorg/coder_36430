@@ -1,0 +1,96 @@
+
+
+/* MEDIA QUERIES (ESTILOS MOVILES) */
+
+
+@media screen and (min-width: 1024px) {
+    .negocio__pic{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+
+        .hero__title {
+        top: 0px;
+        }
+
+       .negocio, .servicios__columna{
+        flex-direction: column;
+       }
+
+
+       .footer{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        }
+
+        [data-aos=flip-left]{
+        transform: perspective(0px) rotateY(0deg) !important;
+        }
+}
+
+@media screen and (max-width: 425px) {
+    .header{
+        flex-direction: column;} 
+
+    .header__list {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .hero{
+       height: auto;
+       overflow: hidden;
+       padding-bottom: 1rem; 
+    }
+
+    .hero__title--white {
+        color: white;
+        background: black;
+        padding: 0rem 20rem;
+        /* width: 100%; */
+    }
+
+    .hero__title--black {
+        padding: 0rem 20rem;
+        color: black;
+        background: white;
+    }
+
+    .hero__contenedor {
+        gap: 25px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero__formWrp {
+        width: 100%;
+    }
+
+    .form__btn {
+        width: 100%; 
+    }
+    .negocio, .servicios, .footer{
+        flex-direction: column;
+    }
+
+    .negocio{
+        padding: 1rem;
+    }
+
+    .negocio__pic {
+        width: 100%;
+    }
+
+    .aifrem{
+        width: 100% !important;
+    }
+
+
+    .servicios__columna {
+        margin-bottom: 1rem;
+    }
+
+    
+}
